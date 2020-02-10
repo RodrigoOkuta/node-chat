@@ -1,0 +1,28 @@
+{
+  "name": "back-end",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "mongodb": "C:/Users/rodri/mongodb/bin/mongod.exe --dbpath=/Users/rodri/mongodb-data",
+    "start": "node src/index.js",
+    "dev": "set NODE_ENV=dev & env-cmd ./config/dev.env nodemon src/index.js",
+    "debug": "set NODE_ENV=dev & env-cmd ./config/dev.env nodemon --inspect-brk=9300 src/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongodb": "^3.5.2",
+    "mongoose": "^5.6.6",
+    "password-validator": "^5.0.3"
+  },
+  "devDependencies": {
+    "env-cmd": "^8.0.2",
+    "nodemon": "^1.19.1"
+  }
+}
